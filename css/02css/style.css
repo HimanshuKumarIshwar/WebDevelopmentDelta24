@@ -1,0 +1,70 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+h3{
+    color:purple;
+}
+h1{
+    color: #2c51d4;
+}
+
+#login{
+    background-color: rgb(179, 255, 0);
+}
+
+#sigup{
+    background-color: bisque;
+}
+
+
+.follow{
+    color: blanchedalmond;
+    background-color: #ccc;
+    font-weight: 900;
+}
+
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+
+p a{
+    color: purple;
+    background-color: yellowgreen;
+}
+
+nav ul li{
+    color: aqua;
+}
+
+
+p + h3 {
+    text-decoration: underline;
+}
+
+
+.upvote + button{
+    background-color: #ccc;
+}
+
+div > input{
+    background-color: floralwhite;
+}
+
+input[type="radio"]:checked + label{
+    color: green;
+    font-weight: bold;
+
+}
+
+
+p::first-letter{
+    color: blue;
+}
+
+p::selection{
+    background-color: #ccc;
+}
