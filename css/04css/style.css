@@ -1,0 +1,26 @@
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,0,0,0.5);
+}
+
+#opacity{
+    background-color: #ffff23;
+    opacity: 0.2;
+} */
+/* Transition */
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,0,0,0.5);
+    /* transition: 10s; */
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 2s ease-in 0.2s;
+}
+
+div:hover{
+   margin-top: 400px;
+   background-color: pink;
+}

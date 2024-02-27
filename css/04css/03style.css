@@ -1,0 +1,94 @@
+/* div{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+
+    background-color: #7aa874;
+    margin: 10px auto;
+    box-shadow: 2px 2px 8px black;
+} */
+
+
+/* div{
+    width: 400px;
+    height: 200px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url("https://images.unsplash.com/photo-1708876954270-8fad10609e53?q=80&w=1834&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+} */
+*{
+margin: 0;
+padding: 0;
+}
+
+/* .card{
+    height: 200px;
+    width: 200px;
+  border: 2px solid black;
+    display: inline-block;
+    
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.5s ease-in 0.1s;
+    box-shadow: 1px 4px 2px black;
+}
+img{
+   width: 100%;
+}
+.desc{
+padding: 0 2px 0 2px;
+}
+.card:hover{
+    box-shadow: 2px 8px 2px rgb(0, 0, 0,0.5);
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 2px solid black;
+    margin: 2px;
+    display: inline-block;
+}
+
+#static{
+    background-color: yellow;
+    position: static;
+    top: 200px;
+    left: 100px;
+}
+
+#relative{
+    background-color: yellow;
+    position: relative;
+    top: 30px;
+    left: 100px;
+   
+    
+}
+#absolute{
+    background-color: yellow;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    
+}
+#fixed{
+    background-color: yellow;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+
+}
+
+
+
