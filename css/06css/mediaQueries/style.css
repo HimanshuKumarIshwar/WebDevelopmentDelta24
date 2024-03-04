@@ -1,0 +1,41 @@
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+@media (max-width: 400px) {
+    h1{
+        background-color: blue;
+        color: white;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width:400px) {
+    h1{
+        background-color: brown;
+    }
+}
+
+@media (max-width:300px) {
+   h1{
+    background-color: gainsboro;
+   }
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    h1{
+        color: brown;
+    }
+}
+
+
+@media (orientation: landscape) {
+    h1{
+        background-color: rgb(30, 0, 255);
+    }
+}
+
