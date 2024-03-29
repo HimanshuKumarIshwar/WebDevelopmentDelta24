@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+  body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.main-box{
+   text-align: center;
+
+}
+
+.color-box{
+    border: 2px solid black;
+    width: 600px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.color-box p {
+    margin-top: 2px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 2px solid greenyellow;
+}
