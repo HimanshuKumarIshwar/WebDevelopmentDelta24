@@ -24,14 +24,55 @@ const customerSchema = mongoose.Schema({
   ],
 });
 
+// customerSchema.pre("findOneAndDelete", async () => {
+//   console.log("Pre middleware");
+// });
+
+customerSchema.post("findOneAndDelete", async (customer) => {
+  if (customer.orders.length) {
+    let res = await Order.deleteMany({ _id: { $in: customer.orders } });
+    console.log(res);
+  }
+});
+
 const Customer = mongoose.model("Customer", customerSchema);
 
-const findCustomer = async () => {
-  let result = await Customer.find({}).populate("orders");
-  console.log(result[0]);
+//Add New customer
+
+const addCustomer = async () => {
+  const newCust = new Customer({
+    name: "Raju",
+  });
+
+  const newOrders = new Order({
+    item: "MILK",
+    price: 100000,
+  });
+
+  newCust.orders.push(newOrders);
+
+  await newOrders.save();
+  await newCust.save();
 };
 
-findCustomer();
+// addCustomer();
+
+//DeleteCustomer
+
+const delCust = async () => {
+  const res = await Customer.findByIdAndDelete("6668496fbcd9f3a93ae14830");
+  console.log(res);
+};
+
+delCust();
+
+// const findCustomer = async () => {
+//   let result = await Customer.find({}).populate("orders");
+//   console.log(result[0]);
+// };
+
+// findCustomer();
+
 // const addCustomer = async () => {
 //     let cust1 = new Customer({
 //       name: "Himanshu Kumar",
