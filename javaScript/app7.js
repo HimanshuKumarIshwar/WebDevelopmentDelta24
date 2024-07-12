@@ -10,7 +10,6 @@
 //     console.log(e*2);
 // })
 
-
 // let arrObj = [{
 //     name: "Himanshu Kumar",
 //     age: 22
@@ -27,7 +26,6 @@
 // arrObj.forEach((e)=> {
 //     console.log(`${e.name} is ${e.age} year old`);
 // })
-
 
 // let num = [1, 2, 3, 4,5];
 
@@ -53,14 +51,11 @@
 //     }
 // ]
 
-
 // let gpa = student.map((e)=> {
 //     return (e.marks/10);
 // })
 
 // console.log(gpa);
-
-
 
 // let nums = [2, 4, 1, 5, 6, 2, 7, 8, 9];
 // let even = nums.filter((e)=> {
@@ -80,7 +75,6 @@
 
 // console.log(sum);
 
-
 //  let arr = [1, 4, 2, 5, 6, 7, 3, 8, 12, 3];
 
 //  let max =  -1;
@@ -93,16 +87,15 @@
 
 // console.log(max);
 
-// 
+//
 
-    // let ans = arr.reduce((max, ele)=> {
-    //     if(ele > max){
-    //         return ele;
-    //     }else {
-    //         return max;
-    //     }
-    // })
-
+// let ans = arr.reduce((max, ele)=> {
+//     if(ele > max){
+//         return ele;
+//     }else {
+//         return max;
+//     }
+// })
 
 //console.log(ans);
 //console.log((max));
@@ -115,9 +108,8 @@
 
 // console.log(isMulOfTen);
 
-
 // let min  = arr.reduce((min, ele)=> {
-   
+
 //     if(ele < min){
 //         return ele;
 //     }else {
@@ -133,7 +125,6 @@
 // }
 
 // console.log(sum(2));
-
 
 // spread
 
@@ -156,8 +147,6 @@
 
 // console.log(nums);
 
-
-
 // let data = {
 //     email: "ironman@gmail.com",
 //     password: "abcd"
@@ -170,10 +159,8 @@
 
 // console.log(copyData);
 
-
 // let obj2 = {..."hello"};
 // console.log(obj2);
-
 
 // function sum(...args){
 //     return args.reduce((sum, elem) => (sum + elem))
@@ -186,7 +173,6 @@
 // }
 
 // min(12, 1, 2, 3 )
-
 
 // Destructuring
 
@@ -209,12 +195,11 @@
 // const {username: user, password: pass, name, age, city:loctaion} = student;
 // console.log(user, pass, name, age);
 
-
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Assigment
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
- //let arr = [6, 6, 6, 6, 6, 6];
+//let arr = [6, 6, 6, 6, 6, 6];
 
 // let res = arr.map((e)=> (e*e)).reduce((cum, elem)=> cum+elem)/arr.length;
 // console.log(res);
@@ -226,8 +211,6 @@
 // let ans = userName.map((e)=> (e.toUpperCase()));
 // console.log(ans);
 
-
-
 // function doubleAndReturnArgs(arr, ...args){
 
 //     let doubleArgs = args.map((e)=> (2*e));
@@ -237,44 +220,23 @@
 
 // }
 
-
 // let arr= [1, 2, 3, 4, 5, 6];
 
 // console.log(doubleAndReturnArgs(arr, 12, 12, 2, 4));
 
-
-function mergerObject(obj1, obj2){
-    let ans = {...obj1, ...obj2}
-    return ans;
+function mergerObject(obj1, obj2) {
+  let ans = { ...obj1, ...obj2 };
+  return ans;
 }
-
 
 const student = {
-    name: "Himanshu",
-    age: 22
-}
+  name: "Himanshu",
+  age: 22,
+};
 
 const locations = {
-    from: "Patna",
-     village: "Bharaul"
-}
+  from: "Patna",
+  village: "Bharaul",
+};
 
 console.log(mergerObject(student, locations));
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
